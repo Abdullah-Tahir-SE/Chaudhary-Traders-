@@ -1,10 +1,8 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+# Chaudhary Traders - Project Guidelines
+
+This repository contains the official web application and POS inventory counter for **Chaudhary Traders (Adda Sang Noor Shah, Sahiwal)** — Exclusive Dealer for **Sungro Crop Care (PVT) Ltd**.
+
+## Development Rules
+- Maintain clean React + Vite architecture.
+- Keep Tailwind CSS v4 design system harmonious with company color scheme (#2A1B69 Deep Navy & #00A651 Agriculture Green).
+- Ensure all POS billing calculations and thermal receipt print layouts remain exact and reliable for daily store operation.

@@ -1,95 +1,134 @@
-# AgriCare Hero
+<div align="center">
 
-Build a clean, high-converting, modern Frontend-only Agriculture/Fertilizer Store Home Page using React, Tailwind CSS, and Lucide Icons (or React Icons). 
+  <img src="public/logo.png" alt="Chaudhary Traders Logo" width="120" />
 
-Do NOT set up any backend yet. Focus strictly on a responsive, polished UI layout.
+  # 🌾 Chaudhary Traders — Official Sungro Crop Care Store & POS System
 
-### Branding & Color Palette
-- Business Name: "Chaudhary Traders" (Agri-Care & Plant Protection Store)
-- Background: Pure White (#FFFFFF) and Light Clean Gray (#F8FAFC)
-- Primary Navy Color: `#2A1B69` (For Top Header bar, Nav links, and Primary headings)
-- Accent Agriculture Green: `#00A651` (For active links, badges, hover states, and action buttons)
-- Body Text: Muted Dark Gray (#64748B)
+  **Exclusive Authorized Dealer of Sungro Crop Care (PVT) Ltd — Sahiwal, Pakistan**
 
----
+  [![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+  [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+  [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+  [![License](https://img.shields.io/badge/License-MIT-green.style=for-the-badge)](LICENSE)
 
-### Section 1: Top Bar & Navigation Bar
-1. Top Bar (Background: `#2A1B69`, Text: White, Text Size: Small):
-   - Left side: Email (info@chaudharytraders.com) and Phone (+92 300 1234567).
-   - Right side: Social media icons (Facebook, Instagram, WhatsApp, YouTube).
-2. Main Navbar (Background: White, Sticky, Shadow-sm):
-   - Logo: "Chaudhary Traders" with a green leaf accent style.
-   - Nav Links: Home (Active - Green), About Us, Products (Dropdown style), Services, Brands/Companies, POS Counter, Contact Us.
-   - Right Side: Search bar button.
+  *Providing 100% original fertilizers, crop protection sprays, hybrid seeds, micronutrients, and expert agronomy advisory to the farming community of Sahiwal since 2009.*
+
+</div>
 
 ---
 
-### Section 2: Smooth Image Carousel / Hero Slider (MAIN FOCUS)
-Create an auto-playing, smooth-transition Hero Carousel component:
-- Behavior: Auto-scroll through 3 agriculture-themed high-res images every 4 seconds.
-- Transition: Use smooth cross-fade and CSS keyframe zoom/pan effect (Ken Burns effect) so that while the image stays, it subtly moves/scales smoothly giving a high-end dynamic feel.
-- Dark Overlay: Subtle dark overlay on images to make white text pop out clearly.
-- Slide Content over Images:
-  - Slide 1: Heading "Quality Fertilizers for Maximum Crop Yield" + Subtext "Official dealer of Engro, FMC & Syngenta" + Green "Explore Products" button.
-  - Slide 2: Heading "Advanced Plant Protection & Pesticides" + Subtext "Safeguard your crops with modern spray formulations" + Green "Consult Advisor" button.
-  - Slide 3: Heading "Trusted Agri Partner in Sahiwal" + Subtext "Serving farmers with authentic seeds and fertilizers" + Green "Visit Store" button.
-- Controls: Smooth dot indicators at the bottom and subtle left/right arrow navigation buttons.
+## 📌 Executive Summary
+
+**Chaudhary Traders**, located at Adda Sang Noor Shah, Sahiwal, is the leading exclusive franchise dealership for **Sungro Crop Care**. This modern web application serves a dual purpose:
+1. **Public Farmer Portal**: Provides farmers with high-yield crop advice, genuine product catalogs, live weather-based spray condition recommendations, and direct WhatsApp agronomy consultation.
+2. **In-Store POS & Admin Counter**: A complete Point-of-Sale billing counter with automated invoice generation, live stock inventory control, daily sales statistics, and instant thermal receipt printing for daily store transactions.
 
 ---
 
-### Section 3: Live Weather & Spray Advisory Bar (Farmer Utility)
-- A clean white card bar right under the hero section displaying:
-  - Local Sahiwal Live Weather Alert (e.g., 32°C Sunny | Ideal Conditions for Wheat Spray).
-  - Quick Info Badges: 100% Original Products | Doorstep Delivery | Expert Advisory.
+## ✨ Key Features
+
+### 🛍️ Public Agriculture Portal
+- **Dynamic Hero Banner**: Staggered text animations and high-resolution slides displaying Sungro crop care solutions.
+- **Product Catalog & Filtering**: Search & filter by categories:
+  - 🧪 *Fertilizers* (DAP, Urea, CAN Calcium)
+  - 🛡️ *Crop Sprays & Pesticides* (Coragen, Karate, Fungicides, Weedicides)
+  - 🌾 *Hybrid Seeds* (Corn, Wheat, Vegetables)
+  - 🌿 *Micronutrients & Foliar Sprays* (Zinc, Boron, Bio-stimulants)
+- **Agri Weather & Spray Advisory**: Live weather conditions widget analyzing humidity, wind speed, and temperature to give farmers real-time spray window recommendations.
+- **Store Location & Contact**: Embedded interactive map for Adda Sang Noor Shah, Sahiwal, plus direct WhatsApp quick consultation.
+
+### 💼 In-Store POS & Inventory Management
+- **Point of Sale (POS) Counter**: Quick item selection, automatic total calculation, discount handling, and customer receipt recording.
+- **Thermal Receipt Generator**: Instant printable invoice layout customized with official brand header, itemized breakdown, and store helpline contact details.
+- **Real-Time Inventory Control**: Track stock quantities, low-stock status alerts, and easy price adjustments.
+- **Sales Analytics Dashboard**: Daily sales metrics, top revenue products breakdown, and order volume counters.
 
 ---
 
-### Section 4: Featured Product Categories Grid
-- Display 4 Category Cards in a responsive grid:
-  1. Fertilizers (Khad)
-  2. Crop Sprays (Pesticides)
-  3. Hybrid Seeds
-  4. Micronutrients & Plant Medicines
-- Card Style: White background, subtle gray border (#E2E8F0), soft hover shadow lift, green badge tags, and a "Browse Items" button.
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend Framework** | [React 19](https://react.dev/) + [Vite 6](https://vitejs.dev/) |
+| **Routing** | [React Router DOM v7](https://reactrouter.com/) |
+| **Styling & UI** | [Tailwind CSS v4](https://tailwindcss.com/) + Custom HSL Color Tokens |
+| **Icons** | [Lucide React](https://lucide.dev/) |
+| **Data Analytics** | [Recharts](https://recharts.org/) |
+| **Build & Tooling** | Vite, PostCSS, ESLint |
 
 ---
 
-### Section 5: Our Services Section (Sungro Theme Style)
-- Left Column: Heading "Our Agriculture Services" in `#2A1B69` with a short green accent underline bar. Paragraph explaining advisory services, plus a green pill-shaped button "View All Services".
-- Right Columns: 2 Cards showcasing "Farmer Awareness Campaigns" and "Direct Franchise & Delivery" with images and descriptions.
+## 🚀 Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) (v18 or higher) installed on your system.
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Abdullah-Tahir-SE/Chaudhary-Traders-.git
+   cd Chaudhary-Traders-
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server**:
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:5173`.
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
 ---
 
-### Section 6: Trusted Partner Brands (Companies Carousel)
-- Showcase logos/names of top brands: Engro Fertilizers, FMC, Syngenta, Bayer, Fatima Fertilizer.
+## 📂 Project Structure
 
----
-
-### Section 7: Footer
-- Background: `#2A1B69` with white text.
-- Columns for About Chaudhary Traders, Quick Navigation Links, Contact Address (Main Grain Market, Sahiwal), and Copyright text.
-
-Make all components responsive (Mobile, Tablet, Desktop) using standard Tailwind classes.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://chaudhary-agro-showcase.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d225f9df-8f8d-4331-9d23-44034597832e).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
 ```
+Chaudhary-Traders/
+├── public/
+│   ├── logo.png          # Official Chaudhary Traders Emblem
+│   ├── favicon.png       # Web Browser Favicon Icon
+│   └── robots.txt
+├── src/
+│   ├── assets/           # High quality crop & store images
+│   ├── components/
+│   │   ├── admin/        # POS Counter, Admin Sidebar, Sales Stats, Stock Management
+│   │   ├── public/       # Navbar, Footer, Hero Carousel, Services, Categories, TopBar
+│   │   ├── ui/           # Reusable UI primitives (Buttons, Cards, Dialogs, Tables)
+│   │   └── weather/      # Weather Bar & Spray Advisory Widget
+│   ├── hooks/            # Custom React hooks (useMobile, etc.)
+│   ├── lib/              # Utility functions
+│   ├── pages/
+│   │   ├── admin/        # Dashboard, POS Page, Inventory Page
+│   │   └── public/       # Home, Products, AboutUs, Contact
+│   ├── services/         # Weather & API service helpers
+│   ├── App.jsx           # App routing setup
+│   ├── main.jsx          # App entry point
+│   └── styles.css        # Tailwind CSS v4 & custom keyframe animations
+├── index.html            # Main HTML template with SEO tags & icons
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 📍 Store Information
+
+- **Store Name**: Chaudhary Traders (Exclusive Dealer — Sungro Crop Care)
+- **Address**: Adda Sang Noor Shah, Tehsil & District Sahiwal, Punjab, Pakistan
+- **Helpline / WhatsApp**: +92 341 4518001
+- **Operating Hours**: Monday – Saturday: 08:00 AM – 08:00 PM
+
+---
+
+<div align="center">
+  <sub>Developed & Maintained for Chaudhary Traders Sahiwal © 2026. All rights reserved.</sub>
+</div>
