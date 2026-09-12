@@ -153,3 +153,57 @@ input[type="number"] {
   animation: heroBtnsIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
 }
 
+/* 80mm Thermal Printer Print Styles */
+@media print {
+  @page {
+    size: 80mm auto;
+    margin: 0;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide everything on page during print */
+  body * {
+    visibility: hidden !important;
+  }
+
+  /* Expose thermal receipt printable container and its children */
+  #thermal-receipt-print-area,
+  #thermal-receipt-print-area * {
+    visibility: visible !important;
+  }
+
+  /* Position receipt at top left for exact 80mm roll print */
+  #thermal-receipt-print-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 78mm !important;
+    max-width: 78mm !important;
+    margin: 0 !important;
+    padding: 2mm 3mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+  }
+
+  /* Hide buttons or modal overlay chrome inside print area */
+  .no-print {
+    display: none !important;
+  }
+}
+
+
