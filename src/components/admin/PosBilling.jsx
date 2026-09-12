@@ -194,8 +194,8 @@ export default function PosBilling() {
   };
 
   return (
-    <div className="h-full p-2.5 sm:p-3.5 max-w-full mx-auto flex flex-col overflow-hidden font-sans">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-stretch h-full overflow-hidden">
+    <div className="min-h-screen lg:h-full p-2.5 sm:p-3.5 max-w-full mx-auto flex flex-col font-sans">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-stretch min-h-0 lg:h-full">
         {/* Left Section: Product Catalog */}
         <div className="lg:col-span-7 xl:col-span-8 bg-white rounded-2xl border border-slate-200 p-3 shadow-xs flex flex-col h-full overflow-hidden">
           {/* Top Search Bar & Counter */}
@@ -494,8 +494,8 @@ export default function PosBilling() {
 
       {/* Official Thermal Receipt Modal & Print Area */}
       {invoiceDone && printedInvoice && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-hidden">
-          <div className="bg-slate-100 rounded-2xl w-[360px] max-w-full max-h-[90vh] p-3.5 shadow-2xl animate-fade-in font-sans border border-slate-300 flex flex-col justify-between overflow-hidden">
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto overflow-x-hidden">
+          <div className="bg-slate-100 rounded-2xl w-[360px] max-w-[95vw] max-h-[90vh] p-3.5 shadow-2xl animate-fade-in font-sans border border-slate-300 flex flex-col justify-between overflow-hidden my-auto">
             {/* Header Tag */}
             <div className="w-full flex items-center justify-between pb-2 mb-2 border-b border-slate-200/80 shrink-0 no-print">
               <span className="text-[10px] font-extrabold uppercase bg-[#2A1B69] text-white px-2 py-0.5 rounded-md tracking-wider">

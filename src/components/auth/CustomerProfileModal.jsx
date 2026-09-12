@@ -90,23 +90,23 @@ export default function CustomerProfileModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 font-sans">
-      <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl max-w-lg w-full p-6 sm:p-8 animate-fade-in relative overflow-hidden">
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto overflow-x-hidden font-sans">
+      <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-2xl max-w-lg w-full p-5 sm:p-8 animate-fade-in relative overflow-hidden max-h-[92vh] overflow-y-auto my-auto">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition-colors"
+          className="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 p-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition-colors z-10"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Header */}
-        <div className="flex items-center gap-3 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-[#00A651] font-black text-lg flex items-center justify-center border border-emerald-200 shadow-xs">
+        <div className="flex items-center gap-3 mb-5 pr-4 sm:pr-0">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-emerald-100 text-[#00A651] font-black text-base sm:text-lg flex items-center justify-center border border-emerald-200 shadow-xs shrink-0">
             {user.name ? user.name.charAt(0).toUpperCase() : 'C'}
           </div>
-          <div>
-            <h2 className="text-xl font-extrabold text-[#2A1B69]">{user.name}</h2>
-            <span className="text-xs text-slate-500 font-medium block">
+          <div className="min-w-0">
+            <h2 className="text-lg sm:text-xl font-extrabold text-[#2A1B69] truncate">{user.name}</h2>
+            <span className="text-[11px] sm:text-xs text-slate-500 font-medium block truncate">
               Farmer Account Profile • Sahiwal
             </span>
           </div>

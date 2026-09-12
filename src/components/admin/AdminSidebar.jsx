@@ -30,7 +30,7 @@ export default function AdminSidebar() {
         </Link>
 
         {/* Navigation Items (Pills) */}
-        <nav className="flex items-center gap-1.5 bg-white/10 p-1 rounded-xl flex-wrap">
+        <nav className="flex items-center gap-1.5 bg-white/10 p-1 rounded-xl overflow-x-auto max-w-full scrollbar-none shrink-0 font-sans">
           <NavLink
             to="/admin/dashboard"
             end

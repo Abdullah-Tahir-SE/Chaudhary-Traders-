@@ -51,15 +51,15 @@ export default function Register() {
       <TopBar />
       <Navbar />
 
-      <main className="flex-1 flex items-center justify-center p-4 sm:p-6 my-6">
-        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl max-w-lg w-full p-6 sm:p-8 animate-fade-in relative overflow-hidden">
+      <main className="flex-1 flex items-center justify-center p-3 sm:p-6 my-4 sm:my-6">
+        <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-xl max-w-lg w-full p-5 sm:p-8 animate-fade-in relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl pointer-events-none"></div>
 
           {/* Header */}
-          <div className="text-center mb-6">
-            <img src={logoImg} alt="Chaudhary Traders Logo" className="w-14 h-14 mx-auto mb-2 object-contain" />
-            <h2 className="text-2xl font-black text-[#2A1B69]">Farmer & Account Registration</h2>
-            <p className="text-xs text-slate-500 mt-1 font-medium">
+          <div className="text-center mb-5 sm:mb-6">
+            <img src={logoImg} alt="Chaudhary Traders Logo" className="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-2 object-contain" />
+            <h2 className="text-xl sm:text-2xl font-black text-[#2A1B69] leading-tight">Farmer & Account Registration</h2>
+            <p className="text-[11px] sm:text-xs text-slate-500 mt-1 font-medium leading-snug">
               Create your account to order Sungro products & track khata ledger
             </p>
           </div>

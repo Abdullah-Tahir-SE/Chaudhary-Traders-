@@ -46,19 +46,19 @@ export default function CustomerRegisterModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 font-sans">
-      <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl max-w-md w-full p-6 sm:p-8 animate-fade-in relative overflow-hidden">
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto overflow-x-hidden font-sans">
+      <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-2xl max-w-md w-full p-5 sm:p-8 animate-fade-in relative overflow-hidden max-h-[92vh] overflow-y-auto my-auto">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition-colors"
+          className="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 p-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition-colors z-10"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="text-center mb-5">
-          <img src={logoImg} alt="Chaudhary Traders" className="w-12 h-12 mx-auto mb-2 object-contain" />
-          <h2 className="text-2xl font-black text-[#2A1B69]">Farmer Registration</h2>
-          <p className="text-xs text-slate-500 mt-1 font-medium">
+        <div className="text-center mb-5 pr-4 sm:pr-0">
+          <img src={logoImg} alt="Chaudhary Traders" className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 object-contain" />
+          <h2 className="text-lg sm:text-2xl font-black text-[#2A1B69] leading-tight">Farmer Registration</h2>
+          <p className="text-[11px] sm:text-xs text-slate-500 mt-1 font-medium leading-snug">
             Create account for store orders & khata balance tracking
           </p>
         </div>
