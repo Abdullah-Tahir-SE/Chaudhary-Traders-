@@ -71,7 +71,7 @@ export default function AdminLoginModal({ isOpen, onClose }) {
               <input
                 required
                 type="text"
-                placeholder="Enter Admin Username or Email"
+                placeholder="admin"
                 value={usernameOrEmail}
                 onChange={(e) => setUsernameOrEmail(e.target.value)}
                 className="w-full bg-[#F8FAFC] border border-slate-200 rounded-xl pl-9 pr-3 py-2.5 text-xs font-semibold text-slate-800 outline-none focus:border-[#00A651]"
@@ -86,7 +86,7 @@ export default function AdminLoginModal({ isOpen, onClose }) {
               <input
                 required
                 type={showPassword ? 'text' : 'password'}
-                placeholder="Enter Password"
+                placeholder="admin"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-[#F8FAFC] border border-slate-200 rounded-xl pl-9 pr-10 py-2.5 text-xs font-semibold text-slate-800 outline-none focus:border-[#00A651]"
@@ -100,6 +100,10 @@ export default function AdminLoginModal({ isOpen, onClose }) {
                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               </button>
             </div>
+          </div>
+
+          <div className="p-2 rounded-xl bg-emerald-50 border border-emerald-200 text-[#00A651] text-[11px] font-bold text-center">
+            Credentials: <strong>Username: admin</strong> | <strong>Password: admin</strong>
           </div>
 
           <button

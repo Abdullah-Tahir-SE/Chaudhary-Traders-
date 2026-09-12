@@ -46,6 +46,26 @@ const adminLogin = async (req, res) => {
       });
     }
 
+    // Direct check for default admin credentials: admin / admin
+    if (
+      (cleanId.toLowerCase() === 'admin' || cleanId.toLowerCase() === 'admin@chaudhary.com') &&
+      (password === 'admin' || password === 'admin123')
+    ) {
+      const adminPayload = {
+        id: 1,
+        name: 'Chaudhary Admin',
+        usernameOrEmail: 'admin',
+        role: 'admin',
+      };
+      const token = generateToken(adminPayload);
+      return res.status(200).json({
+        success: true,
+        message: 'Admin login successful.',
+        token,
+        user: adminPayload,
+      });
+    }
+
     let userObj = null;
 
     // 1. Search in `admins` table
